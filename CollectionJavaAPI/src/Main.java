@@ -1,7 +1,4 @@
 import list.Desafios.CarrinhoDeCompras;
-import list.OperacoesBasicas.ListaTarefas;
-
-import java.sql.ClientInfoStatus;
 
 public class Main {
     public static void main(String[] args) {
