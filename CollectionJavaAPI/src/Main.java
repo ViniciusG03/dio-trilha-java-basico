@@ -1,16 +1,18 @@
 import list.Desafios.CarrinhoDeCompras;
+import list.Desafios.SomarNumeros;
 
 public class Main {
     public static void main(String[] args) {
-        CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
-
-        carrinhoDeCompras.adicionarItem("Arroz", 5.00, 2);
-        carrinhoDeCompras.adicionarItem("Feijão", 10.00, 1);
-        carrinhoDeCompras.adicionarItem("Macarrão", 2.00, 3);
-        carrinhoDeCompras.adicionarItem("Carne", 20.00, 1);
-
-        carrinhoDeCompras.exibirItens();
-        System.out.println("Total: " + carrinhoDeCompras.calcularValorTotal());
+        SomarNumeros somarNumeros = new SomarNumeros();
+        somarNumeros.adicionarNumeros(1);
+        somarNumeros.adicionarNumeros(2);
+        somarNumeros.adicionarNumeros(3);
+        somarNumeros.adicionarNumeros(4);
+        somarNumeros.adicionarNumeros(5);
+        somarNumeros.exibirNumeros();
+        System.out.println(somarNumeros.calcularSoma(somarNumeros.numeros));
+        somarNumeros.encontrarMaiorNumero(somarNumeros.numeros);
+        somarNumeros.encontrarMenorNumero(somarNumeros.numeros);
 
     }
 }
